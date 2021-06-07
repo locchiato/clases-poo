@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/* ejercicio 1 y 2:
+    piedra, papel, tijera o spock.
+*/
+
 public class Main {
 
     static private Scanner scanner = new Scanner(System.in);

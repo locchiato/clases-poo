@@ -1,3 +1,5 @@
+package clase7;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,7 +36,7 @@ public class Cliente {
         List<Cliente> miLista = new ArrayList<Cliente>(Arrays.asList(cliente1, cliente2, cliente3, cliente4, cliente5));
 
         /* es lo mismo que:
-        List miLista = new ArrayList<Cliente>();
+        List miLista = new ArrayList<clase9.Cliente>();
         miLista.add(cliente1);
         miLista.add(cliente2);
         miLista.add(cliente3);

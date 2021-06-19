@@ -1,3 +1,5 @@
+package clase7;
+
 public class UsuarioJuego {
 
     // String

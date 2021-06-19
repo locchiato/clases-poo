@@ -1,3 +1,5 @@
+package clase7;
+
 import java.util.Scanner;
 
 /* ejercicio 1 y 2:

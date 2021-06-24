@@ -13,7 +13,9 @@ public class Nave extends Objeto{
 
     @Override
     public void irA(int x, int y, char direccion) {
-
+        // todo se puede poner colorcito
+        // jaja a ver
+        // en cual paso estas?
     }
 
     public void girar(char direccion) {

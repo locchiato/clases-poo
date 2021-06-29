@@ -1,14 +1,22 @@
 package clase12;
 
-public class Cuenta {
-    // TODO HOLA MILO!!
-  // TODO <--. HOLIS, como haces para que este amarillo? ahre lo que le importaba
-        // asi xdd
+public abstract class Cuenta {
+	
+	private double saldo;
 
-    // aca arranca el codigo :v
-        // ven lo que escribo??KEMOSION -> siii!! jaja
-    STRING ahreajjajajajjaque ondis hay que copiar la pantalla del profe? ;
-  String res = "si jaja";
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+		System.out.println("Tu nuevo saldo es: " + informarSaldo());
+	}
 
+	public double informarSaldo() {
+		return saldo;
+	}
+
+	public void depositar(double monto) {
+		setSaldo(informarSaldo() + monto);
+	}
+
+	public abstract void extraer(double monto);
 
 }

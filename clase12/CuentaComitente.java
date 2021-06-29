@@ -14,25 +14,29 @@ public class CuentaComitente extends Cuenta {
         Double saldoActual = informarSaldo();
         String claveIngresada;
         if(monto <= (saldoActual/2)) {
-            setSaldo(getSaldo() - monto);
+            setSaldo(informarSaldo() - monto);
         } else {
             System.out.println("Ingrese clave numerica: ");
             try{
+                // un char es un int
+                // char es 1 byte
+                // int es 4 bytes
+                // pero char tiene un limite esta dentro de los
+                // valores aceptados por int
+                // en ascii
                 claveIngresada = scanner.nextLine();
+
+                // eso es para comparar dos cadenas ignorando minuscalas y mayusculas
+                // da true si:                // AGua == agUA
                 if(claveValidacion.compareToIgnoreCase(claveIngresada) == 0){
                     System.out.println("Las claves son iguales.");
-                    setSaldo(getSaldo() - monto);
+                    setSaldo(informarSaldo() - monto);
                 }
+
             } catch(Exception e){
                 System.out.println("ERROR: " + e.getMessage());
             }
         }
-
-        // si tengo saldo = 500;
-        // y pido -> 250 -> me pide clave? -> no
-        // solo me pide clave si el monto es mayor al 50% del saldo.
-
-        // pongo clave validacion? mas de lo que tengo depositado.
 
     }
 

@@ -24,7 +24,7 @@ public abstract class SistemaArmas {
 
     @Override
     public String toString() {
-        return "SistemaArmas{" +
+        return this.getClass() +  " - SistemaArmas{" +
                 "energia=" + energia +
                 '}';
     }

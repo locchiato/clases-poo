@@ -16,7 +16,11 @@ public class Almacen {
         for(Producto producto: productos){
             acumulador += producto.calcularEspacio();
         }
-        return acumulador;
+        return Math.round(acumulador*100.0)/100.0;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 
     public void agregarProducto(Producto producto){

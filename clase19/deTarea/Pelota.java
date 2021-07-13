@@ -11,7 +11,7 @@ public class Pelota extends Producto{
 
     @Override
     public double calcularEspacio() {
-        return 0;
+        return (4/3) * Math.PI * Math.pow(radio, 3);
     }
 
     @Override

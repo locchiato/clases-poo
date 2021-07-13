@@ -6,10 +6,10 @@ public class Caja extends Producto{
     private double ancho;
     private double altura;
 
-    public Caja(double longitud, double ancho, double altura) {
+    public Caja(double longitud) {
         this.longitud = longitud;
-        this.ancho = ancho;
-        this.altura = altura;
+        this.ancho = longitud;
+        this.altura = longitud;
     }
 
     @Override

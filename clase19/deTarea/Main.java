@@ -8,21 +8,20 @@ public class Main {
     public static void main(String[] args) {
 
         ProductoFactory factory = ProductoFactory.getInstance();
+        Almacen almacen = new Almacen();
 
-        List<Producto> products = new ArrayList<>();
-
-        products.add(
+        almacen.agregarProducto(
                 factory.crearProducto("CAJA10X10")
         );
-        products.add(
+        almacen.agregarProducto(
                 factory.crearProducto("pelotafutbol")
         );
-        products.add(
+        almacen.agregarProducto(
                 factory.crearProducto("PeLoTaTeNiS")
         );
 
         for (Producto producto :
-                products) {
+                almacen.getProductos()) {
             System.out.println(producto);
         }
 

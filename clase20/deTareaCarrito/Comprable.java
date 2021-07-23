@@ -1,2 +1,4 @@
-package clase20.deTareaCarrito;public interface Comprable {
+package clase20.deTareaCarrito;
+
+public interface Comprable {
 }

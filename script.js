@@ -3,6 +3,6 @@ window.onload = () => {
         .innerText.replace(' ', '').toLowerCase();
 
     document.querySelector('main').innerHTML += `
-    <img src="${clase}/pg/${clase}.png" />
+    <img src="${clase}/pg/${clase}.PNG" />
     `
 }
